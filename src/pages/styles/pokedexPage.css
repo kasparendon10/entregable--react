@@ -1,0 +1,119 @@
+.pokedex {
+  background: url('../styles/img/pokemon-anime-1270506.webp');
+    padding: 30px;
+  }
+  
+  .poke__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 30px 0; 
+    gap: 20px;
+  }
+  
+  .poke__header h3 {
+    background-color: rgb(33, 168, 221);
+    height: 45px;
+    border-radius: 15px;
+    font-size: 30px;
+    text-align: center;
+    color:black; 
+  }
+  
+  .poke__header div {
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+    flex-wrap: wrap;
+  }
+  
+  .poke__header form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .poke__header input {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+  
+  .poke__header button {
+    padding: 8px 16px;
+    font-size: 20px;
+    background-color: #18c521;
+    border: none;
+    cursor: pointer;
+  }
+
+  .poke__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+  }
+  
+  .PokeCard {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .poke__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+  .poke__pagination button {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #18c521;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .poke__pagination button:hover {
+    background-color: #149416;
+  }
+  
+  .poke__pagination button.hidden {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .pokedex {
+      padding: 10px; 
+    }
+  
+    .poke__header h3 {
+      height: auto; 
+      font-size: 16px; 
+    }
+  
+    .poke__header input {
+      padding: 8px; 
+      font-size: 14px; 
+      border-radius: 5px; 
+    }
+  
+    .poke__header button {
+      padding: 8px 12px;
+      font-size: 16px; 
+    }
+  
+    .PokeCard {
+      border-radius: 5px; 
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+    }
+  
+    .poke__pagination button {
+      padding: 8px 12px; 
+      font-size: 14px; 
+      border-radius: 5px; 
+    }
+  }
